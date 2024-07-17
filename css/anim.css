@@ -1,0 +1,53 @@
+@keyframes hero {
+  0% {
+   opacity: 0;
+   transform:translateY(-50px);
+  }
+
+  50% {
+   opacity: 0.5;
+   transform:translateY(0);
+  }
+
+  100% {
+   opacity: 1;
+  }
+ }
+
+ @keyframes hero-descr {
+
+  0% {
+    opacity: 0;
+   }
+   100% {
+    opacity: 1;
+   }
+ }
+
+
+@keyframes string {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-30%);
+  }
+}
+
+@keyframes figure {
+  0% {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+
+
+}

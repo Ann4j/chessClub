@@ -1,0 +1,506 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+
+@media (max-width:1500px) {
+  .hero__container::before {
+    background-position: right 13% bottom 16%;
+  }
+
+  .hero {
+    background-position: 0 0, top 0 left 46%;
+  }
+
+  .container {
+    padding: 0 clamp(20px, 4.3vw, 80px);
+  }
+
+}
+
+@media (max-width:1100px) {
+
+  /* hero */
+  .hero {
+    background-image: url(../img/hero__backround.png), url(../img/hero__back-1100px.png);
+    background-position: 0 0, bottom 30px right 0;
+    background-blend-mode: color-burn, normal;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover, 100%;
+    background-color: var(--back-color);
+  }
+
+  .hero__container::before {
+    display: none;
+  }
+
+  .hero__container {
+    padding: 18px 0 120px;
+  }
+
+  .hero__content {
+    max-width: 100%;
+  }
+
+  .hero__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .hero__btn {
+    max-width: 45%;
+  }
+
+  .hero__descr {
+    max-width: 45%;
+  }
+
+  .hero__btn-detail {
+    background: #fff;
+    opacity: 0.9;
+    color: #1f1f1f;
+    border: 1px solid #fff;
+    white-space: nowrap;
+  }
+
+  /* tournament */
+
+  .tournament {
+    padding: 50px 0 0;
+    margin-bottom: 120px;
+  }
+
+  .tournament__wrap::after {
+    width: 335px;
+    height: 212px;
+    background-size: cover;
+  }
+
+
+  .tournament__title {
+    max-width: 55%;
+  }
+
+  .session {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .session__wrap {
+    max-width: 45%;
+  }
+
+  .session__item {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr
+  }
+
+  .session__nav {
+    border: none;
+    padding-bottom: 0;
+  }
+
+  .session__descr {
+    padding: 12px 0;
+  }
+
+
+  .session__item:last-child::before {
+    left: 0;
+    bottom: 25%;
+  }
+
+  .session__content::before {
+    width: 500px;
+    background-position: center;
+  }
+
+  .session__title {
+    display: none;
+  }
+
+  /* stages  */
+
+  .stages {
+    margin-bottom: 115px;
+  }
+
+  .session__header {
+    display: block;
+  }
+
+  .stages__title {
+    max-width: 100%;
+  }
+
+  .stages__descr {
+    font-size: 18px;
+    display: block;
+    max-width: 100%;
+    padding-left: 0;
+    padding-top: 12px;
+  }
+
+  .stages__explain:last-child::after {
+    top: -50px;
+    background-size: 100%;
+  }
+
+  .stages__wrap {
+    -ms-grid-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stages__explain:nth-child(3) {
+    -ms-grid-row-span: 1;
+    grid-row: span 1;
+  }
+
+  .stages__explain:nth-child(7) {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+  }
+
+  /* participant */
+
+  .slider__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(100% / 2);
+            flex: 0 0 calc(100% / 2);
+  }
+
+  .session__item:last-child .session__descr::before {
+    left: 0%;
+    bottom: 23%;
+  }
+
+}
+
+@media (max-width:810px) {
+
+  /* hero */
+
+  .hero__container {
+    padding: 18px 0 290px;
+  }
+
+  .hero {
+    background-image: url(../img/hero__backround-mobile.png), url(../img/hero__city-mobile.png);
+    background-position: 0 0, bottom 26px right 0;
+  }
+
+  .hero__container::before {
+    display: block;
+    background-image: url(../img/hero__figures-810px.png);
+    background-position: center bottom 40px;
+  }
+
+  .hero__logo {
+    margin-bottom: 38px;
+  }
+
+  .hero__logo svg {
+    width: 213px;
+    height: 32px;
+  }
+
+  .hero__wrap {
+    gap: 10px;
+  }
+
+  .hero__descr {
+    max-width: 100%;
+    text-align: start;
+    margin-bottom: 31px;
+  }
+
+  .hero__btn {
+    max-width: 100%;
+  }
+
+  /* tournament */
+
+  .tournament {
+    padding: 20px 0 0;
+  }
+
+  .tournament__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 21px;
+  }
+
+  .tournament__title {
+    max-width: 100%;
+  }
+
+  .tournament__lecture {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column
+  }
+
+  .tournament__title {
+    display: none;
+  }
+
+  .tournament__title-mobile {
+    display: block;
+  }
+
+  .session__header {
+    display: none;
+  }
+
+  .session__title {
+    display: block;
+  }
+
+  .session__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .session__content::before {
+    width: 335px;
+    height: 402px;
+  }
+
+  .tournament__lecture {
+    margin-bottom: 30px;
+  }
+
+  .session__wrap {
+    padding-top: 0;
+  }
+
+  .session__content {
+    gap: 26px;
+  }
+
+  .session__wrap {
+    max-width: 100%;
+  }
+
+  .session__title {
+    margin-bottom: 30px;
+  }
+
+
+  .session__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .session__item:nth-child(4) .session__descr {
+    padding-top: 16px;
+  }
+
+  .session__nav {
+    padding-bottom: 13px;
+  }
+
+  .session__descr {
+    padding: 12px 0 13px;
+  }
+
+  .session__nav {
+    margin-right: 12px;
+  }
+
+  .session__support {
+    font-size: 18px;
+  }
+
+
+
+  /* stages */
+
+  .stages__title {
+    line-height: 1.1;
+  }
+
+  .session__item:last-child {
+    display: -ms-grid;
+    display: grid;
+  }
+
+  .stages__wrap {
+    display: none;
+  }
+
+
+  .stages__wrap-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 30px;
+    gap:0;
+  }
+
+  .stages__explain {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 28px;
+    padding: 60px 0 34px;
+  }
+
+
+  .stages__card {
+    padding: 0 20px;
+  }
+
+  .stages__explain:last-child::after {
+    display: none;
+  }
+
+
+  .stages__content {
+    position: relative;
+  }
+
+  .stages__title {
+    margin-bottom: 135px;
+  }
+
+  .stages__title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/stages__airplane.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: contain;
+    z-index: 1;
+  }
+
+  .stages__descr {
+    margin-bottom: 20px;
+  }
+
+
+  .stages__text {
+    font-size: 18px;
+  }
+
+  .stages__explain:last-child p {
+    max-width: 90%;
+  }
+
+  .stages__circle {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #D9D9D9;
+  }
+
+  .stages__counter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 6px;
+  }
+
+  .stages__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 16px;
+  }
+
+
+  /* participant */
+
+  .participant {
+    margin-bottom: 95px;
+  }
+
+  .participant__buttons {
+    display: none;
+  }
+
+  .participant__buttons-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .participant__btn svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .participant__wrap {
+    margin-bottom: 35px;
+  }
+
+  .participant__header {
+    margin-bottom: 35px;
+  }
+
+  .article__btn {
+    margin-top: 0;
+  }
+
+}
+
+
+@media (max-width:700px) {
+
+  .slider__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
+@media (max-width:400px) {
+
+  .hero__container::before {
+    background-image: url(../img/hero__figures-mobile.png);
+  }
+
+  .session__descr {
+    padding: 0 0 13px;
+  }
+
+
+}
